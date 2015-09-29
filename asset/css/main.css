@@ -9738,11 +9738,13 @@ html.sticky-header-active #header .header-body {
   background-color: #171717;
   border-bottom: 5px solid #CCC;
   border-top: 5px solid #384045;
-  margin: 0;
+  margin: 0 0 40px 0;
   min-height: 50px;
   padding: 20px 0;
   position: relative;
   text-align: left; }
+  .page-header.custom-product {
+    margin: 0; }
   .page-header .breadcrumb {
     background: none;
     margin: -3px 0 0;
@@ -13401,7 +13403,6 @@ html[xmlns] .clearfix {
 
 /* Custom Underline */
 .custom-underline {
-  background: url(../img/custom-underline.png) no-repeat center 100%;
   padding-bottom: 25px;
   font-size: 1.5em; }
 
@@ -18049,6 +18050,8 @@ a {
 
 html .heading-primary, html .lnk-primary, html .text-color-primary {
   color: #0088cc !important; }
+html .extra-margin {
+  margin-top: 40px; }
 html .heading.heading-primary h1, html .heading.heading-primary h2, html .heading.heading-primary h3, html .heading.heading-primary h4, html .heading.heading-primary h5, html .heading.heading-primary h6 {
   border-color: #0088cc; }
 html .heading-secondary, html .lnk-secondary, html .text-color-secondary {

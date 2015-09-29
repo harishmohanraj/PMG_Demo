@@ -10,8 +10,8 @@
   <meta name="description" content="Piala Mutiara Group Sdn. Bhd. (580539-A). Forms parts of Piala Mutiara  Group of companies. Incorporated on 17th May 2002 for the purpose of venturing into activities of civil construction with emphasis to compliment the property development project carried out by Piala Mutiara  Group of companies
 ">
   <!-- Favicon -->
-      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-      <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+      <link rel="shortcut icon" href="/PMG_Demo//favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="/PMG_Demo//favicon.ico" type="image/x-icon">
       <!-- Mobile Metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Web Fonts  -->
@@ -54,9 +54,9 @@
          <i class="fa fa-bars"></i>
          </button>
          <ul class="header-social-icons social-icons hidden-xs">
-            <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="social-icons-facebook"><a href="https://www.facebook.com/pages/BinwanGlobal/414898402020167" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
             <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li class="social-icons-youtube"><a href="https://www.youtube.com/channel/UCaClbENYH97jw9am0IB6PEA" target="_blank" title="youtube"><i class="fa fa-youtube"></i></a></li>
          </ul>
          <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
             <nav>
@@ -144,13 +144,13 @@
                <img src="/PMG_Demo//asset/images/binwan/dummy.png" alt="3dbg" data-lazyload="/PMG_Demo//asset/images/slider-images/binwan-2.jpg" data-bgposition="center top" data-bgfit="contain" data-bgrepeat="no-repeat" />
             </li>
             <!-- SLIDE  -->
-            <li data-transition="slideup" data-slotamount="7" data-masterspeed="1000" data-thumb="/PMG_Demo//asset/images/binwan/binwan-1.jpg" data-saveperformance="on" data-title="Parallax 3D">
+            <li data-transition="slideup" data-slotamount="7" data-masterspeed="1000" data-thumb="/PMG_Demo//asset/images/slider-images/binwan-1.jpg" data-saveperformance="on" data-title="Parallax 3D">
                <!-- MAIN IMAGE -->
                <img src="/PMG_Demo//asset/images/binwan/dummy.png" alt="3dbg" data-lazyload="/PMG_Demo//asset/images/binwan/invest-in-malaysia.jpg" data-bgposition="center top" data-bgfit="contain" data-bgrepeat="no-repeat" />
             </li>
             <!-- SLIDE  -->   
             <!-- SLIDE  -->
-            <li data-transition="slideup" data-slotamount="7" data-masterspeed="1000" data-thumb="/PMG_Demo//asset/images/binwan/binwan-1.jpg" data-saveperformance="on" data-title="Parallax 3D">
+            <li data-transition="slideup" data-slotamount="7" data-masterspeed="1000" data-thumb="/PMG_Demo//asset/images/slider-images/binwan-1.jpg" data-saveperformance="on" data-title="Parallax 3D">
                <!-- MAIN IMAGE -->
                <img src="/PMG_Demo//asset/images/binwan/dummy.png" alt="3dbg" data-lazyload="/PMG_Demo//asset/images/binwan/bunglo_type_a.jpg" data-bgposition="center top" data-bgfit="contain" data-bgrepeat="no-repeat" />
             </li>
@@ -202,7 +202,7 @@
       <div class="portfolio-title">
          <div class="row">
             <div class="portfolio-nav-all col-md-1">
-               <a href="/portfolio.html" data-tooltip="" data-original-title="Back to Projects Page"><i class="fa fa-th"></i></a>
+               <a href="/PMG_Demo/portfolio" data-tooltip="" data-original-title="Back to Projects Page"><i class="fa fa-th"></i></a>
             </div>
             <div class="col-md-10 center">
                <h2 class="mb-none heading-primary"><strong>BINWAN</strong></h2>
@@ -438,9 +438,9 @@
                   </ul>
                   <div class="social-icons">
                      <ul class="social-icons">
-                        <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li class="social-icons-facebook"><a href="https://www.facebook.com/pages/BinwanGlobal/414898402020167" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                         <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="social-icons-youtube"><a href="https://www.youtube.com/channel/UCaClbENYH97jw9am0IB6PEA" target="_blank" title="youtube"><i class="fa fa-youtube"></i></a></li>
                      </ul>
                   </div>
                </div>
@@ -562,13 +562,14 @@
                       longitude: initLongitude,
                       zoom: 15
                    };
-
                    var map = $("#googlemaps").gMap(mapSettings);
+                   var mapBinwan = $("#googlemapsMarkers").gMap(mapSettings);
 
                    // Map Center At
                    var mapCenterAt = function(options, e) {
                       e.preventDefault();
                       $("#googlemaps").gMap("centerAt", options);
+                      $("#googlemapsMarkers").gMap("centerAt", options);
                    }
 
                 </script>

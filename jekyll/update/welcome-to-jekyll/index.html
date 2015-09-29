@@ -9,8 +9,8 @@
   <title>Welcome to Jekyll!</title>
   <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
   <!-- Favicon -->
-      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-      <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+      <link rel="shortcut icon" href="/PMG_Demo//favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="/PMG_Demo//favicon.ico" type="image/x-icon">
       <!-- Mobile Metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Web Fonts  -->
@@ -53,9 +53,9 @@
          <i class="fa fa-bars"></i>
          </button>
          <ul class="header-social-icons social-icons hidden-xs">
-            <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="social-icons-facebook"><a href="https://www.facebook.com/pages/BinwanGlobal/414898402020167" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
             <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li class="social-icons-youtube"><a href="https://www.youtube.com/channel/UCaClbENYH97jw9am0IB6PEA" target="_blank" title="youtube"><i class="fa fa-youtube"></i></a></li>
          </ul>
          <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
             <nav>
@@ -679,9 +679,9 @@
                   </ul>
                   <div class="social-icons">
                      <ul class="social-icons">
-                        <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li class="social-icons-facebook"><a href="https://www.facebook.com/pages/BinwanGlobal/414898402020167" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                         <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="social-icons-youtube"><a href="https://www.youtube.com/channel/UCaClbENYH97jw9am0IB6PEA" target="_blank" title="youtube"><i class="fa fa-youtube"></i></a></li>
                      </ul>
                   </div>
                </div>
@@ -803,13 +803,14 @@
                       longitude: initLongitude,
                       zoom: 15
                    };
-
                    var map = $("#googlemaps").gMap(mapSettings);
+                   var mapBinwan = $("#googlemapsMarkers").gMap(mapSettings);
 
                    // Map Center At
                    var mapCenterAt = function(options, e) {
                       e.preventDefault();
                       $("#googlemaps").gMap("centerAt", options);
+                      $("#googlemapsMarkers").gMap("centerAt", options);
                    }
 
                 </script>

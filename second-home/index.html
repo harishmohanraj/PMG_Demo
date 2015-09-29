@@ -10,8 +10,8 @@
   <meta name="description" content="Piala Mutiara Group Sdn. Bhd. (580539-A). Forms parts of Piala Mutiara  Group of companies. Incorporated on 17th May 2002 for the purpose of venturing into activities of civil construction with emphasis to compliment the property development project carried out by Piala Mutiara  Group of companies
 ">
   <!-- Favicon -->
-      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-      <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+      <link rel="shortcut icon" href="/PMG_Demo//favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="/PMG_Demo//favicon.ico" type="image/x-icon">
       <!-- Mobile Metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Web Fonts  -->
@@ -54,9 +54,9 @@
          <i class="fa fa-bars"></i>
          </button>
          <ul class="header-social-icons social-icons hidden-xs">
-            <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="social-icons-facebook"><a href="https://www.facebook.com/pages/BinwanGlobal/414898402020167" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
             <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li class="social-icons-youtube"><a href="https://www.youtube.com/channel/UCaClbENYH97jw9am0IB6PEA" target="_blank" title="youtube"><i class="fa fa-youtube"></i></a></li>
          </ul>
          <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
             <nav>
@@ -165,7 +165,7 @@
          <div id="first" class="mb-sm heading heading-primary heading-border heading-bottom-border" style="display:inline-block;">
             <h1>About <strong>MM2H</strong></h1>
          </div>
-         <p>Malaysia My Second Home (MM2H) Programme is <strong class="text-primary">promoted by the Government of Malaysia</strong> to allow foreigners who fulfill certain criteria, to stay in Malaysia for as long as possible on a multiple-entry social visit pass.he Social Visit Pass is <strong class="text-primary">initially for a period of ten (10) years</strong>, and is renewable. So far some 12,000 people have been approved and it is generating a lot of interest. The programme is primarily attracting people who wish to retire in Malaysia or spend extended periods here.
+         <p>Malaysia My Second Home (MM2H) Programme is <strong class="text-primary">promoted by the Government of Malaysia</strong> to allow foreigners who fulfill certain criteria, to stay in Malaysia for as long as possible on a multiple-entry social visit pass. The Social Visit Pass is <strong class="text-primary">initially for a period of ten (10) years</strong>, and is renewable. So far some 12,000 people have been approved and it is generating a lot of interest. The programme is primarily attracting people who wish to retire in Malaysia or spend extended periods here.
          </p>
          <p>Applicants are <strong class="text-primary">allowed to bring along their dependants</strong> (children below 21 years of age, step children, disabled children, and parents, over 60) under their MM2H visa. Older dependent children will have to get a separate visa.</p>
          <p>The minimum purchase of house price in Penang under MM2H program is <strong class="text-primary">RM1,000,000</strong></p>
@@ -208,9 +208,11 @@
             <li data-appear-animation="fadeInUp" data-appear-animation-delay="0" class="appear-animation fadeInUp appear-animation-visible"><i class="fa fa-check"></i>Packages includes <strong class="text-primary">house + car+ medical insurance</strong>.</li>
             <li data-appear-animation="fadeInUp" data-appear-animation-delay="300" class="appear-animation fadeInUp appear-animation-visible" style="animation-delay: 300ms;"><i class="fa fa-check"></i>Package also includes <strong class="text-primary">once 1% deposit paid a flight ticket and lodging for 2pax for 2 nights will be provided in Penang for viewing Site</strong></li>
          </ul>
+
          <!-- Currency Converter Script - EXCHANGERATEWIDGET.COM -->
 <div style="width:198px;border:1px solid #0088CC;margin-bottom:40px;display:inline-block;float:right;"><div style="text-align:center;background-color:#0088CC;width:100%;font-size:13px;font-weight:bold;height:30px;padding-top:2px;"><a href="#" style="color:#FFFFFF;text-decoration:none;">Currency Converter</a></div><script type="text/javascript" src="//www.exchangeratewidget.com/converter.php?l=en&amp;f=USD&amp;t=EUR&amp;a=1&amp;d=F0F0F0&amp;n=FFFFFF&amp;o=000000&amp;v=1"></script></div>
 <!-- End of Currency Converter Script -->
+<p style="font-size:10px;clear:left;">Terms and Conditions applied.</p>
       </div>
    </div>
 </div>
@@ -248,9 +250,9 @@
                   </ul>
                   <div class="social-icons">
                      <ul class="social-icons">
-                        <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li class="social-icons-facebook"><a href="https://www.facebook.com/pages/BinwanGlobal/414898402020167" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                         <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="social-icons-youtube"><a href="https://www.youtube.com/channel/UCaClbENYH97jw9am0IB6PEA" target="_blank" title="youtube"><i class="fa fa-youtube"></i></a></li>
                      </ul>
                   </div>
                </div>
@@ -372,13 +374,14 @@
                       longitude: initLongitude,
                       zoom: 15
                    };
-
                    var map = $("#googlemaps").gMap(mapSettings);
+                   var mapBinwan = $("#googlemapsMarkers").gMap(mapSettings);
 
                    // Map Center At
                    var mapCenterAt = function(options, e) {
                       e.preventDefault();
                       $("#googlemaps").gMap("centerAt", options);
+                      $("#googlemapsMarkers").gMap("centerAt", options);
                    }
 
                 </script>
